@@ -22,7 +22,7 @@ This repository contains beginner-friendly Python projects to practice and demon
 - Alarm feature with optional pop-up alert  
 - Stopwatch with start, stop, reset controls  
 - Modern GUI built using `customtkinter`  
-- [View Code](./Digital-Clock/digital_clock.py)
+- [View Code](./Digital-Clock/clock_app.py)
 
 ---
 
