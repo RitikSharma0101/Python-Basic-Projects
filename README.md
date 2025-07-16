@@ -16,6 +16,14 @@ This repository contains beginner-friendly Python projects to practice and demon
 - Delay animation using `time.sleep`
 - [View Code](./Dice-Roller/dice_roller.py)
 
+### 3. 🕒 Digital Clock App
+
+- Live updating clock and date using `datetime`  
+- Alarm feature with optional pop-up alert  
+- Stopwatch with start, stop, reset controls  
+- Modern GUI built using `customtkinter`  
+- [View Code](./Digital-Clock/digital_clock.py)
+
 ---
 
 ## 🚀 Purpose
