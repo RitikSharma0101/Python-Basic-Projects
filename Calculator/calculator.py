@@ -1,7 +1,7 @@
 # calculator.py
 
-# 🧮 This is a simple Python calculator project
-# ✅ It performs basic arithmetic operations in a loop until the user exits
+# This is a simple Python calculator project
+# It performs basic arithmetic operations in a loop until the user exits
 
 # Return the sum of two numbers
 def add(a,b):
@@ -58,10 +58,10 @@ def calculator():
                     case "4":
                         print(f"Result: {divide(num1,num2)}")
             else:
-                print("❌ Invalid choice. Please select from 1 to 5.")
+                print("Invalid choice. Please select from 1 to 5.")
 
         except ValueError:
-            print("❌ Invalid input. Please enter numeric values only.")
+            print("Invalid input. Please enter numeric values only.")
 
 # Run the calculator
 calculator()
