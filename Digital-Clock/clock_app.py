@@ -10,7 +10,7 @@ set_default_color_theme("blue")
 win = CTk()
 win.geometry("500x550+700+50")  # Size and position
 win.resizable(False, False)
-win.title("🕒 Digital Clock")
+win.title("Digital Clock")
 
 # ----------- Clock Display -----------
 frame1 = CTkFrame(win, fg_color="#1f1f2e", corner_radius=15, height=130)
@@ -48,7 +48,7 @@ frame2.pack(fill="x", pady=10, padx=10)
 
 # Alarm input title
 title1 = CTkLabel(
-    frame2, text="⏰ Set Alarm (HH:MM):",
+    frame2, text="Set Alarm (HH:MM):",
     font=("Courier New", 20, "bold"),
     text_color="#ffffff", corner_radius=10,
 )
@@ -79,9 +79,9 @@ def set_alarm():
     try:
         datetime.strptime(user_input, "%H:%M")  # Validate time format
         alarm_set_time = user_input
-        alarm_status.configure(text=f"⏰ Alarm set for: {alarm_set_time}")
+        alarm_status.configure(text=f"Alarm set for: {alarm_set_time}")
     except ValueError:
-        alarm_status.configure(text="❌ Invalid time format (HH:MM)")
+        alarm_status.configure(text="Invalid time format (HH:MM)")
 
 # Check every second if alarm time matches
 def check_alarm():
@@ -89,8 +89,8 @@ def check_alarm():
     if alarm_set_time:
         current = datetime.now().strftime("%H:%M")
         if current == alarm_set_time:
-            showinfo("⏰ Alarm", "Time's up!")  # Popup notification
-            alarm_status.configure(text="✅ Alarm rang!")
+            showinfo("Alarm", "Time's up!")  # Popup notification
+            alarm_status.configure(text="Alarm rang!")
             alarm_set_time = None  # Disable after ringing
     win.after(1000, check_alarm)  # Check every second
 
@@ -103,7 +103,7 @@ CTkButton(frame2, text="Set Alarm", command=set_alarm).place(x=275, y=50)
 def remove_alarm():
     global alarm_set_time
     alarm_set_time = None
-    alarm_status.configure(text="❌ Alarm cleared.")
+    alarm_status.configure(text="Alarm cleared.")
 
 CTkButton(frame2, text="Remove Alarm", command=remove_alarm).place(x=130, y=50)
 
@@ -152,9 +152,9 @@ def reset_stopwatch():
     stopwatch_label.configure(text="00:00:00")
 
 # Stopwatch control buttons
-CTkButton(frame3, text="▶ Start", command=start_stopwatch).place(x=60, y=100)
-CTkButton(frame3, text="⏸ Stop", command=stop_stopwatch).place(x=190, y=100)
-CTkButton(frame3, text="🔄 Reset", command=reset_stopwatch).place(x=310, y=100)
+CTkButton(frame3, text="Start", command=start_stopwatch).place(x=60, y=100)
+CTkButton(frame3, text="Stop", command=stop_stopwatch).place(x=190, y=100)
+CTkButton(frame3, text="Reset", command=reset_stopwatch).place(x=310, y=100)
 
 # ----------- Footer Section -----------
 frame4 = CTkFrame(win, fg_color="#4a4a6a", corner_radius=15, height=50)
