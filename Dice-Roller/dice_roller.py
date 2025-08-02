@@ -1,26 +1,26 @@
 from random import randint # For simulating dice rolls
 from time import sleep # For adding delay effect
 
-# 🎲 Main loop: run until user types 'e' to exit
+# Main loop: run until user types 'e' to exit
 while True:
     user = input("Enter your number or Exit(e): ")
 
     if user == "e":
-        print("Thanks for playing! 👋")
+        print("Thanks for playing!")
         break
 
-    elif user.isdigit(): # ✅ Check if input is a number
-            rolls = []   # 📦 List to store all dice results
+    elif user.isdigit(): # Check if input is a number
+            rolls = []   # List to store all dice results
 
-            # 🔁 Roll the dice as many times as the user entered
+            # Roll the dice as many times as the user entered
             for i in range(1,(int(user)+1)):
-                print("Rolling the dice...", end="\r") # 🌀 Simulate rolling effect
-                sleep(2) # ⏳ Wait 2 seconds for suspense
-                a = randint(1,6) # 🎲 Random number between 1-6
-                rolls.append(a) # 📥 Save the roll
+                print("Rolling the dice...", end="\r") # Simulate rolling effect
+                sleep(2) # Wait 2 seconds for suspense
+                a = randint(1,6) # Random number between 1-6
+                rolls.append(a) # Save the roll
                 print(f"You rolled a {a}!")
 
-                # 🎨 Display corresponding ASCII art
+                # Display corresponding ASCII art
                 match a:
                     case 1:
                         print("""
@@ -69,10 +69,10 @@ while True:
 |o     o|
 |o     o|
 +-------+""")
-            # ✅ After rolling is done, show summary
-            print(f"\n🎲 Your Rolls: {rolls}")
-            print(f"🎯 Total Score: {sum(rolls)}")
+            # After rolling is done, show summary
+            print(f"\nYour Rolls: {rolls}")
+            print(f"Total Score: {sum(rolls)}")
 
     else:
-        # ❌ Handle invalid input
-        print("❌ Invalid input. Enter a number or 'e' to exit.")
+        # Handle invalid input
+        print("Invalid input. Enter a number or 'e' to exit.")
