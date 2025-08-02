@@ -24,6 +24,13 @@ This repository contains beginner-friendly Python projects to practice and demon
 - Modern GUI built using `customtkinter`  
 - [View Code](./Digital-Clock/clock_app.py)
 
+### 4. 🔐 OTP Generator
+- Generates a random 4-digit numeric OTP
+- Uses Python’s `random.randint()` to select digits
+- Combines digits into a single OTP string
+- Output simulates sending OTP via SMS
+- [View Code](./OTP-Generator/otp_generator.py)
+
 ---
 
 ## 🚀 Purpose
