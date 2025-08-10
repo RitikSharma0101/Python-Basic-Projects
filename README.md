@@ -31,6 +31,13 @@ This repository contains beginner-friendly Python projects to practice and demon
 - Output simulates sending OTP via SMS
 - [View Code](./OTP-Generator/otp_generator.py)
 
+### 5. 🖌 Pattern Printer
+- Prints various patterns like triangles, pyramids, diamonds, and more  
+- Supports both solid and hollow patterns  
+- Menu-based interface for easy selection  
+- Uses loops and conditional logic for pattern generation  
+- [View Code](./Pattern-Printer/pattern_printer.py)
+
 ---
 
 ## 🚀 Purpose
@@ -39,4 +46,4 @@ To build a solid foundation in Python and showcase hands-on practice with real m
 
 ## 📜 License
 
-This project is open-source under the MIT License.
+This project is open-source under the [MIT License](./LICENSE).
