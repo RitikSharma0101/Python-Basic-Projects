@@ -38,6 +38,12 @@ This repository contains beginner-friendly Python projects to practice and demon
 - Uses loops and conditional logic for pattern generation  
 - [View Code](./Pattern-Printer/pattern_printer.py)
 
+### 6. 📝 To-Do List
+- Add, show, remove, and clear tasks  
+- Stores tasks in a local file (`data.txt`) — created automatically if not found  
+- Menu-driven program using loops and functions  
+- [View Code](./ToDo-List/todo_list.py)  
+
 ---
 
 ## 🚀 Purpose
